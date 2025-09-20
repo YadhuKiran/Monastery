@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monastery360 - Sikkim Digital Heritage Platform</title>
+    <meta name="description" content="Explore Sikkim's sacred monasteries through immersive virtual tours, interactive maps, digital archives, and cultural experiences.">
+    
+    <!-- PWA Meta Tags -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#164e63">
+    <link rel="apple-touch-icon" href="icon-192.jpg">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Monastery360">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="container">
+            <div class="nav-content">
+                <div class="nav-brand">
+                    <div class="nav-logo">M</div>
+                    <span class="nav-title">Monastery360</span>
+                </div>
+                
+                <div class="nav-links">
+                    <a href="#home" class="nav-link active">Home</a>
+                    <a href="tours.html" class="nav-link">Virtual Tours</a>
+                    <a href="map.html" class="nav-link">Map</a>
+                    <a href="archives.html" class="nav-link">Archives</a>
+                    <a href="calendar.html" class="nav-link">Calendar</a>
+                </div>
+                
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="#home" class="mobile-link active">Home</a>
+            <a href="tours.html" class="mobile-link">Virtual Tours</a>
+            <a href="map.html" class="mobile-link">Map</a>
+            <a href="archives.html" class="mobile-link">Archives</a>
+            <a href="calendar.html" class="mobile-link">Calendar</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="badge">Digital Heritage Platform</div>
+                    <h1 class="hero-title">
+                        Discover Sikkim's Sacred <span class="text-primary">Monasteries</span>
+                    </h1>
+                    <p class="hero-description">
+                        Immerse yourself in the spiritual heritage of the Himalayas through virtual tours, 
+                        interactive maps, and digital archives of Sikkim's ancient monasteries.
+                    </p>
+                    
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary">
+                            <i data-lucide="play"></i>
+                            Start Virtual Tour
+                        </button>
+                        <button class="btn btn-outline">
+                            <i data-lucide="map-pin"></i>
+                            Explore Map
+                        </button>
+                    </div>
+                    
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <div class="avatars">
+                                <div class="avatar"></div>
+                                <div class="avatar"></div>
+                                <div class="avatar"></div>
+                            </div>
+                            <span><strong>12,000+</strong> visitors</span>
+                        </div>
+                        <div class="stat">
+                            <i data-lucide="star" class="star-icon"></i>
+                            <span><strong>4.9</strong> (2.1k reviews)</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-image">
+                    <div class="image-container">
+                        <img src="majestic-himalayan-monastery-with-prayer-flags-and.jpg" 
+                             alt="Majestic Sikkim monastery with prayer flags" 
+                             class="main-image">
+                        <div class="image-overlay">
+                            <div class="image-card">
+                                <div class="card-content">
+                                    <div class="card-info">
+                                        <h3>Rumtek Monastery</h3>
+                                        <p>Gangtok, Sikkim</p>
+                                    </div>
+                                    <button class="play-btn">
+                                        <i data-lucide="play"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="floating-card floating-card-1">
+                        <i data-lucide="camera"></i>
+                        <span>360° Views</span>
+                    </div>
+                    
+                    <div class="floating-card floating-card-2">
+                        <i data-lucide="users"></i>
+                        <span>Live Guided Tours</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Explore Sacred Heritage</h2>
+                <p>Discover the rich spiritual and cultural heritage of Sikkim through our comprehensive digital platform</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon primary">
+                        <i data-lucide="camera"></i>
+                    </div>
+                    <h3>Virtual Tours</h3>
+                    <p>Immersive 360° experiences with multilingual audio guides and interactive hotspots</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon accent">
+                        <i data-lucide="map-pin"></i>
+                    </div>
+                    <h3>Interactive Maps</h3>
+                    <p>Geo-tagged locations with travel integration and detailed monastery information</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon primary">
+                        <i data-lucide="book-open"></i>
+                    </div>
+                    <h3>Digital Archives</h3>
+                    <p>AI-powered search through manuscripts, murals, and historical artifacts</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon accent">
+                        <i data-lucide="calendar"></i>
+                    </div>
+                    <h3>Cultural Calendar</h3>
+                    <p>Festival schedules, events, and booking system for cultural experiences</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Monasteries -->
+    <section class="monasteries">
+        <div class="container">
+            <div class="section-header-flex">
+                <div>
+                    <h2>Featured Monasteries</h2>
+                    <p>Explore the most significant spiritual centers of Sikkim</p>
+                </div>
+                <button class="btn btn-outline">View All Monasteries</button>
+            </div>
+            
+            <div class="monasteries-grid">
+                <div class="monastery-card">
+                    <div class="monastery-image">
+                        <img src="rumtek-monastery-golden-roof-traditional-architect.jpg" 
+                             alt="Rumtek Monastery">
+                        <div class="rating-badge">
+                            <i data-lucide="star"></i>
+                            4.9
+                        </div>
+                    </div>
+                    <div class="monastery-content">
+                        <h3>Rumtek Monastery</h3>
+                        <p class="location">
+                            <i data-lucide="map-pin"></i>
+                            Gangtok
+                        </p>
+                        <p class="description">The largest monastery in Sikkim, seat of the Karmapa</p>
+                        <div class="monastery-footer">
+                            <span class="visitors">
+                                <i data-lucide="users"></i>
+                                2.1k visitors
+                            </span>
+                            <button class="btn-link">Explore</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="monastery-card">
+                    <div class="monastery-image">
+                        <img src="pemayangtse-monastery-white-walls-mountain-view.jpg" 
+                             alt="Pemayangtse Monastery">
+                        <div class="rating-badge">
+                            <i data-lucide="star"></i>
+                            4.8
+                        </div>
+                    </div>
+                    <div class="monastery-content">
+                        <h3>Pemayangtse Monastery</h3>
+                        <p class="location">
+                            <i data-lucide="map-pin"></i>
+                            Pelling
+                        </p>
+                        <p class="description">One of the oldest monasteries in Sikkim</p>
+                        <div class="monastery-footer">
+                            <span class="visitors">
+                                <i data-lucide="users"></i>
+                                1.8k visitors
+                            </span>
+                            <button class="btn-link">Explore</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="monastery-card">
+                    <div class="monastery-image">
+                        <img src="tashiding-monastery-hilltop-prayer-flags-valley-vi.jpg" 
+                             alt="Tashiding Monastery">
+                        <div class="rating-badge">
+                            <i data-lucide="star"></i>
+                            4.7
+                        </div>
+                    </div>
+                    <div class="monastery-content">
+                        <h3>Tashiding Monastery</h3>
+                        <p class="location">
+                            <i data-lucide="map-pin"></i>
+                            West Sikkim
+                        </p>
+                        <p class="description">Sacred monastery on a hilltop with panoramic views</p>
+                        <div class="monastery-footer">
+                            <span class="visitors">
+                                <i data-lucide="users"></i>
+                                1.5k visitors
+                            </span>
+                            <button class="btn-link">Explore</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Begin Your Spiritual Journey</h2>
+                <p>Join thousands of visitors exploring Sikkim's sacred monasteries through our immersive digital platform</p>
+                <div class="cta-buttons">
+                    <button class="btn btn-secondary">
+                        <i data-lucide="play"></i>
+                        Start Free Tour
+                    </button>
+                    <button class="btn btn-outline-white">
+                        <i data-lucide="clock"></i>
+                        Plan Your Visit
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <div class="nav-logo">M</div>
+                        <span class="nav-title">Monastery360</span>
+                    </div>
+                    <p>Preserving and sharing Sikkim's sacred monastery heritage through digital innovation.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Explore</h4>
+                        <ul>
+                            <li><a href="tours.html">Virtual Tours</a></li>
+                            <li><a href="map.html">Interactive Map</a></li>
+                            <li><a href="archives.html">Digital Archives</a></li>
+                            <li><a href="calendar.html">Cultural Calendar</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="#">Travel Guide</a></li>
+                            <li><a href="#">Cultural Insights</a></li>
+                            <li><a href="#">Photography Tips</a></li>
+                            <li><a href="#">Meditation Guide</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Connect</h4>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Support</a></li>
+                            <li><a href="#">Newsletter</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Monastery360. Preserving sacred heritage through digital innovation.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
