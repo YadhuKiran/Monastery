@@ -3,7 +3,7 @@ const nextConfig = {
   experimental: {
     webpackBuildWorker: true,
   },
-  // Enable service worker
+  // Enable service worker api 
   swcMinify: true,
   // Optimize for PWA
   compress: true,
