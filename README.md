@@ -1,4 +1,4 @@
-# Monastery360 - Sikkim Digital Heritage Platform
+ # Monastery360 - Sikkim Digital Heritage Platform
 
 A functional prototype of Monastery360 featuring 360° panoramic views, interactive maps, digital archives, and cultural experiences for Sikkim's sacred monasteries.
 
