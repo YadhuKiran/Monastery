@@ -1,0 +1,19 @@
+{
+  "enquiries": [
+    {
+      "id": "16916b14-5254-4477-84ba-ef8cabdf836b",
+      "name": "Demo User",
+      "email": "demo@example.com",
+      "organisation": "Sikkim Tourism",
+      "interest": "Government demo",
+      "message": "Please schedule a Monastery360 platform demonstration.",
+      "status": "new",
+      "createdAt": "2026-05-18T07:40:45.969Z"
+    }
+  ],
+  "analytics": {
+    "demoViews": 0,
+    "plannerRequests": 0,
+    "tourLaunches": 0
+  }
+}
