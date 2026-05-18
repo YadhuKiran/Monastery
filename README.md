@@ -3,7 +3,7 @@
 Monastery360 is a deployable Vite + React digital heritage prototype for Sikkim monastery discovery. It includes destination profiles, an OpenStreetMap-powered interactive map, a visit planner, a virtual tour, a festival calendar, searchable archives, a local heritage assistant, and a lightweight Node API for enquiry capture.
 
 ## Run locally
-
+ 
 ```bash
 npm install
 npm run dev
